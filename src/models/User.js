@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
-<<<<<<< HEAD
-=======
 import Game from "./Game";
->>>>>>> 98f6a10ef544fe085711540cf4f63cfd1b8d41f3
 
 const Schema = mongoose.Schema;
 
@@ -18,12 +15,9 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
-<<<<<<< HEAD
-=======
     },
     games: {
         type: [Game.schema]
->>>>>>> 98f6a10ef544fe085711540cf4f63cfd1b8d41f3
     }
 })
 

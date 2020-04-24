@@ -1,7 +1,5 @@
 export default `
 
-<<<<<<< HEAD
-=======
     input GameInput {
         _id: String!
         name: String!
@@ -10,7 +8,6 @@ export default `
         price: Float!
     }
 
->>>>>>> 98f6a10ef544fe085711540cf4f63cfd1b8d41f3
     type Game {
         _id: String!
         name: String!

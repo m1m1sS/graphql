@@ -34,21 +34,12 @@ export default {
                 })
             })
         },
-<<<<<<< HEAD
-        editUser: (root, {_id, username, email, password}) => {
-            return new Promise((resolve, reject) => {
-                User.findByIdAndUpdate({_id}, {$set: {username, email, password}}, {new: true}).exec((error, response) => {
-                    error ? reject(error) : resolve(response);
-                })
-            })
-=======
         editUser: async (root, {_id, username, email, password, games}) => {
             const response = await User.findByIdAndUpdate({_id}, {$set: {username, email, password, games}}, {new: true}).exec();
             if(!response){
                 throw new Error(`Cannot save user: ${_id}`);
             }
             return response;
->>>>>>> 98f6a10ef544fe085711540cf4f63cfd1b8d41f3
         }
     }
 }
